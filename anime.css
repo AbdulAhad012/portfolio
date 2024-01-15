@@ -1,0 +1,441 @@
+*{
+    padding: 0;
+}
+
+
+
+
+#logo {
+  position: relative;
+  font-size: 50px;
+  color: #333;
+  display: inline-block;
+}
+
+#logo::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  border-radius: 4px;
+  background-color: #DACBCB;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-in-out;
+}
+
+#logo:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
+
+
+/* Navbar styles */
+#nav {
+  margin-left: 210px;
+  position: relative;
+  bottom: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#nav a {
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 18px;
+  color: #333;
+  position: relative;
+}
+
+#nav a::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  border-radius: 3px;
+  background-color: #DACBcb;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-in-out;
+}
+
+#nav a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* Logo styles */
+#logo {
+  position: relative;
+  font-size: 50px;
+  color: #333;
+  display: inline-block;
+}
+
+#logo::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  border-radius: 4px;
+  background-color: #DACBCB;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-in-out;
+}
+
+#logo:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* Adjust font size on hover */
+#nav a:hover {
+  font-size: 20px; /* Increase font size on hover */
+}
+
+
+
+  
+
+
+
+
+body{
+  background-color: #eaeaea;
+}
+
+header {
+    border-radius: 12px;
+    margin-top: 0px;
+    background-color: #f1f1f1;
+
+}
+#logo{
+    position: relative;
+    top: 30px;
+    font-size: 50px;
+    color: #333;
+}
+
+#nav{
+    margin-left: 210px;
+    position: relative;
+    bottom: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; 
+}
+a{
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 18px;
+    color: #333;
+}
+
+.Main1{
+  color: #333;
+}
+
+/*#hea{
+    font-size: 80px;
+    font-family: serif;
+    color: #333;
+}
+#Par{
+    margin-right:31px ;
+    font-family: serif;
+    font-size: 19px;
+    color: #333;
+}
+
+/* Hero Section */
+.hero {
+    border-radius: 12px;
+    background-color:#dacbcb;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+    padding-top: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .hero h2 {
+    font-size: 80px;
+    margin-bottom: 20px;
+  }
+  
+  #Par2{
+    margin-right:31px ;
+    font-family: serif;
+    font-size: 19px;
+    color: #333;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+  }
+  
+  #HF1{
+    font-size: 40px;
+  }
+  
+  #HF2{
+    font-size: 26px;
+  }
+  
+  /* About Section */
+  #Hea2{
+    font-size: 80px;
+    font-family: serif;
+    color: #333;
+}
+  
+  .about {
+    border-radius: 12px;
+    background-color: #e6cfcf;
+    text-align: center;
+    padding: 80px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .about p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 40px;
+  }
+  
+    .ABT1{
+      color: #333;
+      font-size: 18px;
+      font-family: Arial, Helvetica, sans-serifs;
+      
+    }
+
+    #HS1{
+      font-family: serif;
+    }
+
+
+  /* Services Section */
+
+  #OS{
+    padding-top:0px;
+    margin-top: 0px;
+    font-size: 60px;
+    font-family: serif;
+  }
+
+  .services {
+    text-align: center;
+    padding: 40px 0;
+    color: #333;
+  }
+  
+  .services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
+  
+  .service {
+    background-color: #fffaf0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    margin-bottom: 40px;
+    text-align: left;
+  }
+  
+  .service h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  
+  
+  
+  #SS1 {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  #HS2{
+    font-size: 25px;
+    font-family: serif;
+    color: #333;
+  }
+
+  #SS2{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  #HS12{
+    font-family: serif;
+  }
+  
+  #SS3{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  /* Contact Section */
+  .contact {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+  }
+  
+  .contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
+  
+  .contact form {
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .contact form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+  }
+  
+  .contact form input[type="text"],
+  .contact form input[type="email"],
+  .contact form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  .contact form input[type="submit"] {
+    background-color: #f58634;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+  }
+  
+  .contact form input[type="submit"]:hover {
+    background-color: #e0722a;
+  }
+  
+  /* Footer Styles */
+  footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+/* Your existing CSS styles */
+
+/* Additional animations */
+
+/* Example animation for hero section */
+.hero {
+    animation: fadeInAnimation 2s ease-in-out forwards;
+  }
+  
+  @keyframes fadeInAnimation {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Animation for about section */
+  .about {
+    animation: slideInAnimation 1s ease-in-out forwards;
+  }
+  
+  @keyframes slideInAnimation {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Animation for services section */
+  .services {
+    animation: scaleAnimation 1s ease-in-out forwards;
+  }
+  
+  @keyframes scaleAnimation {
+    from {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  /* Animation for contact section */
+  .contact {
+    animation: fadeInRightAnimation 1s ease-in-out forwards;
+  }
+  
+  @keyframes fadeInRightAnimation {
+    from {
+      opacity: 0;
+      transform: translateX(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  /* Additional animations for other sections can be added here */
+  
+  /* Your existing CSS styles */
+
+  
+/* Add initial opacity for sections */
+section {
+    opacity: 0;
+    transition: opacity 0.6s ease-out;
+  }
+  
+  /* Add animation when sections are in view */
+  section.animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
